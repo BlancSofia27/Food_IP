@@ -1,0 +1,161 @@
+/* CAJA QUE CONTIENE TODO */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CAJA QUE CONTIENE EL FORMULARIO */
+.container form {
+  background-color: #00ffc8;
+  padding: 16px;
+  margin-top: 115px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* ETIQUETAS TITLE, IMAGE, SUMMARY, HEALTHSCORE, STEPS, DIETS */
+.container label {
+  color: rgba(255, 255, 255, 0.801);
+  font-family: +serif;
+  font-style: normal;
+  font-weight: bold;
+  background-color: transparent;
+  width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  margin-bottom: 1%;
+}
+
+/* CAJA DONDE SE ESCRIBE LO QUE VA EN TITLE E IMAGE */
+.container input {
+  background-color: white;
+  height: 20px;
+  color: rgba(100, 96, 90, 0.8);
+  margin-bottom: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  border: none;
+}
+
+/* CAJA DONDE SE ESCRIBE LO QUE VA EN SUMMARY Y STEPS */
+.container textarea {
+  background-color: white;
+  height: 100px;
+  color: rgba(100, 96, 90, 0.8);
+  resize: none;
+  margin-bottom: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  border: none;
+  
+}
+
+/* BARRA DEL HEALTHSCORE */
+.container input[type=range] {
+  background-color: white;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  height: 8px;
+  outline: none;
+  border-radius: 5px;
+
+}
+
+/* CIRCULITO DE LA BARRA DEL HEALTHSCORE */
+.container input[type=range]::-webkit-slider-thumb {
+  background-color: rgb(21, 26, 172);
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* CAJA DONDE SE ESCRIBE LO QUE VA EN DIETS */
+.container select {
+  background-color: rgb(255, 255, 255);
+  margin-top: .3%;
+  margin-bottom: 1%;
+  color: rgb(73, 69, 69);
+  border-radius: 6.5px;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+
+/* COLOR  QUE SE PONE CUANDO TE COLOCAS SOBRE LA CAJA DONDE SE ESCRIBE LO QUE VA EN DIETS */
+.container select:hover,
+select:focus-visible {
+  background-color: rgb(189, 183, 183);
+  color: black;
+
+}
+
+.createButton {
+  border-radius: 10px;
+  width: 100%;
+  font-size: 100px;
+  left: 50%;
+  
+}
+
+/* COLOR  DEL BOTON CREATE */
+.disabledButton {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 20px;
+  margin-left: 35%;
+  color: rgb(54, 51, 51);
+}
+
+.formDiets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: flex-start;
+}
+
+.formDiets button {
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.error {
+  margin-top: 0%;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(165, 0, 0, 0.836);
+  font-style: normal;
+  text-shadow: 0 0 1px rgba(165, 0, 0, 0.836);
+}
+
+.boton {
+  background-color: #00ffd9;
+  color: rgb(255, 255, 255);
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px auto;
+  transition: .3s;
+  border: none;
+  bottom: 10px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-align: center;
+}

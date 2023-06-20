@@ -1,0 +1,117 @@
+/* FONDO DEL COOKING NARANJA QUE APARECE ANTES DEL DETALLE DE LA CARD */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FONDO DEL NOMBRE DE LA RECETA EN EL DETALLE*/
+.container h1 {
+    color: rgba(253, 253, 253, 0.9);
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-shadow: 0 0 2px white;
+    background-color: #ffc400;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 50px;
+}
+
+/* FONDO DEL COOKING ANTES QUE APAREZCA EL DETALLE DE LA CARD */
+.container img {
+    width: 550px;
+    height: 370px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    margin: 20px auto;
+}
+
+/* FONDO DEL SUMMARY Y EL HOW TO EN EL DETALLE DE LAS CARDS */
+.container h3 {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    color: #424040;
+    margin-top: 10px;
+}
+
+/* FONDO DE LA DESCRIPCION DEL SUMMARY Y EL HOW TO */
+.container p {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    color: #424040;
+    position: relative;
+    margin-top: -15px;
+}
+
+/* COLOR DEL BOTON CON LA FLECHITA PARA IR ATRAS EN EL DETALLE */
+.back {
+    background-color: #ffc400;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: .3s;
+    border: none;
+    bottom: 10px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* COLOR QUE APARECE CUANDO TE PARAS SOBRE EL BOTON PARA IR ATRAS */
+.back:hover {
+    background-color: #ffd13b;
+    color: rgb(255, 255, 255);
+}
+
+/* FONDO DEL HEALTHSCORE DEL DETALLE DE LA CARD */
+.hs {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #424040;
+}
+
+/* FONDO DE LOS TIPOS DE DIETA EN EL DETALLE DE LA CARD */
+.diets {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    color: #424040;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 15px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
